@@ -1,7 +1,6 @@
 
-const form = document.getElementById('#form1');
-form.addEventListener('submit',
-function(e){
-e.defaultPrevented();
-window.alert(1);
+const btn = document.querySelector("#btn");
+btn.addEventListener('click',function(e){
+e.preventDefault();
+alert(1);
 });
