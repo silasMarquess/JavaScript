@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Exercicio</title>
+
+    <!--External Resources-->
+    <link rel="stylesheet" href="./assets/main.css">
+    <!--end block-->
+
+</head>
+
+<body>
+    <section class="container-01">
+        <table class="table-01">
+            <tr>
+                <th class="th">IMC</th>
+                <th class="th">Resultado</th>
+            </tr>
+
+            <tr>
+                <td class="td">Menos do que 18,5</td>
+                <td>Abaixo do Peso</td>
+            </tr>
+
+            <tr>
+                <td class="td">Entre 18,5 e 24,9</td>
+                <td class="td">Normal</td>
+            </tr>
+
+            <tr>
+                <td class="td">Entre 25 e 29,9</td>
+                <td class="td">Sobrepeso</td>
+            </tr>
+            <tr>
+                <td class="td">Entre 30 e 34,9</td>
+                <td class="td">Obesidade nivel 01</td>
+            </tr>
+
+            <tr>
+                <td class="td">Entre 35 e 39,9</td>
+                <td class="td">Obesidade nivel 02</td>
+            </tr>
+            <tr>
+                <td class="td">Mais do que 40</td>
+                <td class="td">Obesidade grau 3</td>
+            </tr>
+        </table>
+        <!--formulario-->
+        <div>
+            <h1>Calcule seu IMC</h1>
+            <form id="form1"  method="post">
+                <label for="txtPeso">Peso</label><br>
+                <input type="text" id="txtPeso"><br>
+    
+                <label for="txtAltura">Altura:</label><br>
+                <input type="text" id="txtAltura"><br>
+    
+                <button >Calcular</button>
+                <label id="lbResultado">Resultado Aqui</label>
+            </form>
+        </div>  
+    </section>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
