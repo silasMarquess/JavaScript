@@ -74,6 +74,24 @@ div{
     background-color: var(--primary-color);
 }
 
+.calc:active{
+    background-color: #4345b4
+}
+
+.res_ruim{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(243, 243, 243);
+    background-color: #f13c3c;
+}
+
+.res_bom{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #1cee8c;
+}
+
 
 
 
