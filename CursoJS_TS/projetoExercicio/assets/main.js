@@ -4,18 +4,16 @@ const btn = document.querySelector("#btn");
 btn.addEventListener('click', function (e) {
     e.preventDefault();
 
-    //capiturando dados 
-    const InputPeso = document.querySelector("#txtPeso");
-    const INputAltura = document.querySelector("#txtAltura");
+    //capiturando dados
+    const InputPeso = document.getElementById('txt-peso');
+    const INputAltura = document.getElementById('txtAltura');
+    let altura = Number(INputAltura.value);
+    let peso = Number(InputPeso.value);
 
-    const peso = Number(InputPeso.Value);
-    const altura = Number(INputAltura.Value);
-
-   /* if (!peso || !altura) {
+     if (!peso || !altura) {
         setResultadoIMC('res_ruim', 'Peso ou ALtura Invalidos');
         return ;
-    }*/
-    console.log(peso) ;
+    } 
     const imc = CalculaIMC(peso, altura);
     if (imc <= 18.5) {
         setResultadoIMC('res_ruim', `Abaixo do Peso:${imc}`);
